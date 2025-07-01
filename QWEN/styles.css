@@ -1,0 +1,316 @@
+html{
+    background-color: white;
+    margin: 0;
+}
+
+body{
+    margin: 0%;
+    color: black;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    color: white;
+    background-color: black;
+}
+
+header h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+header h2 img {
+    margin-top: 0;
+    margin-bottom: -8px;
+}
+
+/* Hide the navigation menu by default (mobile-first) */
+.nav-menu {
+  display: none;
+}
+
+/* Show the menu when 'active' class is added */
+.nav-menu.active {
+  max-height: 300px; /* Adjust based on content size */
+  display: block;
+}
+
+/* Style the hamburger button */
+.hamburger {
+  color: Gold;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav ul li{
+    margin-top: 20px;
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    text-decoration: underline gold 2px;
+}
+
+.current-page{
+    text-decoration: underline 2px gold;
+}
+
+.tokenomics{
+    background: black;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid gold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tokenomics a{
+    text-decoration: none;
+    color: white;
+}
+
+.ban-hol{
+    background: linear-gradient(to bottom, rgb(8, 7, 7), black);
+}
+
+.banner{
+    margin: auto;
+    width: fit-content;
+}
+
+.moto{
+    padding: 20px;
+    text-align: center;
+    color: gold;
+    font-size: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+}
+
+main{
+    background-image: url(Qwenn.jpg);
+    background-position: center;
+    background-size: cover;
+    /* height: 1000px; */
+}
+
+.sections{
+    background-color: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+}
+
+.head-tab{
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: black;
+    background-color: Gold;
+    width: fit-content;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    animation: movey 2s forwards;
+}
+
+@keyframes movey{
+    0%{
+        opacity: 0;
+        margin-left: -100px;
+    }
+}
+
+.content{
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.reveal-presale{
+    font-size: 12px;
+    color: white;
+    margin: 20px auto;
+    border: 5px solid;
+    /* padding: 30px 50px; */
+    width: 97%;
+    /* max-width: fit-content; */
+    text-align: center;
+    background: linear-gradient(to right, rgb(54, 47, 3),black);
+    animation: jim 3s infinite;
+}
+
+.reveal-presale img{
+    border-radius: 50%;
+}
+
+.refer{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.refer img{
+    border-radius: 50%;
+    width: 40px;
+    margin-bottom: -13px;
+}
+
+.ind{
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    background: black;
+    color: gold;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+#whitepaper{
+    border: 3px solid ;
+    background: black;
+}
+
+#whitepaper video{
+    justify-self: center;
+}
+
+@keyframes jim{
+    0%{
+        border-color: black;
+    }
+
+    50%{
+        border-color: gold;
+    }
+
+    100%{
+        border-color: black;
+    }
+}
+
+.token-details{
+    font-weight: none;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.token-details h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.token-details h2,h3,h4,h5,p,li{
+    text-align: left;
+}
+
+.token-details img{
+    width: 70%;
+    max-width: 500px;
+    border: 3px solid black;
+}
+
+.token-details h2{
+    color: skyblue;
+}
+
+.td, .td2{
+    text-align: left;
+}
+
+.td img, .td2 img{
+    border: none;
+}
+
+.td img{
+    width: 200px;
+}
+
+
+@media (max-width: 767px) {
+  .nav-menu {
+  /* height: 500px; */
+  right: 10px;
+  margin-top: 90px;
+  width: 28%;
+  border-radius: 10px;
+  border: 2px gold solid;
+  background-color: black;
+  max-height: 0;
+  z-index: 1000;
+  position: fixed;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay */
+  backdrop-filter: blur(2px); /* Blur effect */
+}
+
+nav ul li{
+        margin-left: -30px;
+}
+
+.tokenomics{
+    justify-self: center;
+    margin-left: -10px;
+}
+
+.moto{
+    font-size: 70px;
+}
+
+.reveal-presale{
+    font-size: 9px;
+}
+
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* Hide hamburger on desktop */
+  }
+  
+  .nav-menu {
+    margin-right: 1%;
+    display: block; /* Always show menu on desktop */
+    max-height: none;
+    margin-top: 0;
+    background: transparent;
+  }
+
+  nav ul{
+    display: flex;
+    gap: 50px;
+}
+}
