@@ -260,10 +260,9 @@ main{
 
 @media (max-width: 767px) {
   .nav-menu {
-  /* height: 500px; */
   right: 10px;
   margin-top: 90px;
-  width: 28%;
+  width: 130px;
   border-radius: 10px;
   border: 2px gold solid;
   background-color: black;
@@ -275,10 +274,6 @@ main{
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3); /* Lighter overlay */
   backdrop-filter: blur(2px); /* Blur effect */
-}
-
-nav ul li{
-        margin-left: -30px;
 }
 
 .tokenomics{
